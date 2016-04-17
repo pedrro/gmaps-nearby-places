@@ -2,10 +2,7 @@
   "name": "gmaps",
   "version": "1.0.0",
   "description": "poc w/ gmaps",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "app.js",
   "dependencies": {
     "angular": "1.2.29",
     "bootstrap": "^3.3.6"
