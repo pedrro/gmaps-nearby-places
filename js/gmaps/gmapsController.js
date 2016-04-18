@@ -16,11 +16,7 @@ function gmapsController($scope, gmapsRepository) {
 
   var getDetailsFromPlace = function(place_id) {
     gmapsRepository.getCoordFromPlace(place_id).then(function(response) {
-      placeCoord = {
-        latitude: response.data.result.geometry.location.lat,
-        longitude: response.data.result.geometry.location.lng
-      };
-      searchNearbyPlacesByCoord(placeCoord.latitude, placeCoord.longitude);
+      searchNearbyPlacesByCoord(response.data.result.geometry.location.lat, response.data.result.geometry.location.lng);
     });
   };
 
